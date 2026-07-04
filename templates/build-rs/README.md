@@ -31,7 +31,7 @@ cargo run --bin client
 
 ## License
 
-<TBD> is released under the [MIT license](./LICENSE.md).
+Connect Rust - Dynamic Code Template is released under the [MIT license](./LICENSE.md).
 
 ## Copyright
 
