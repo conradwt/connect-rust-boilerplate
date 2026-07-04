@@ -1,4 +1,4 @@
-# Connect Rust Boilerplate Templates
+# Connect Rust Boilerplate
 
 This is a template repository configured for [`cargo-generate`](https://github.com/cargo-generate/cargo-generate) to quickly spin up ConnectRPC services in Rust. It houses two distinct templates representing the two recommended code generation workflows in the Connect ecosystem.
 
@@ -54,3 +54,11 @@ cargo generate --path /Users/conradwt/projects.dir/connect-rust-boilerplate/temp
 
 ## Customizing the Protocol Buffer Name
 You can customize the name of the generated `.proto` file (which dynamically renames the schema, package namespace, and service traits in the output) by passing the `--define proto_name=<your_custom_name>` flag during generation.
+
+## License
+
+Connect Rust Boilerplate is released under the [MIT license](./LICENSE.md).
+
+## Copyright
+
+copyright:: (c) Copyright 2026 Conrad Taylor. All Rights Reserved.
