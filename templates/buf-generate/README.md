@@ -36,3 +36,11 @@ In a separate terminal, execute the client binary to perform a test request:
 ```bash
 cargo run --bin client
 ```
+
+## License
+
+<TBD> is released under the [MIT license](./LICENSE.md).
+
+## Copyright
+
+copyright:: (c) Copyright 2026 Conrad Taylor. All Rights Reserved.
