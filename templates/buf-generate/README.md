@@ -39,7 +39,7 @@ cargo run --bin client
 
 ## License
 
-<TBD> is released under the [MIT license](./LICENSE.md).
+Connect Rust - Checked In Code Template is released under the [MIT license](./LICENSE.md).
 
 ## Copyright
 
