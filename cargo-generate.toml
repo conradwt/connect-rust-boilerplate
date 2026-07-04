@@ -1,0 +1,2 @@
+[placeholders]
+proto_name = { type = "string", prompt = "What is the name of your proto file?", default = "greet" }

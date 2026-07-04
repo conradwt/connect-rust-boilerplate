@@ -1,0 +1,17 @@
+version: v2
+plugins:
+  - local: protoc-gen-buffa
+    out: src/generated/buffa
+    opt:
+      - views=true
+      - json=true
+  - local: protoc-gen-connect-rust
+    out: src/generated/connect
+    opt:
+      - extern_path=.=crate::proto
+  - local: protoc-gen-buffa-packaging
+    out: src/generated/buffa
+    strategy: all
+  - local: protoc-gen-buffa-packaging
+    out: src/generated/connect
+    strategy: all

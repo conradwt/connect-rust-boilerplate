@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package {{proto_name}}.v1;
+
+service {{proto_name | pascal_case}}Service {
+  rpc {{proto_name | pascal_case}}({{proto_name | pascal_case}}Request) returns ({{proto_name | pascal_case}}Response);
+}
+
+message {{proto_name | pascal_case}}Request {
+  string name = 1;
+}
+
+message {{proto_name | pascal_case}}Response {
+  string greeting = 1;
+}
