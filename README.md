@@ -17,39 +17,35 @@ cargo install cargo-generate
 ```
 
 ### 1. Generating from the Remote Git Repository
-Once you push this boilerplate repository to your remote Git account, you can generate projects from it:
+Once you push this boilerplate repository to your remote Git account, you can generate projects from it by passing the relative template path as a positional argument:
 
 #### Option A: Checked In Code (Buf Generate)
 ```bash
-cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git \
-  --relative-path templates/buf-generate \
+cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git templates/buf-generate \
   --name my-buf-service \
   --define proto_name=greet
 ```
 
 #### Option B: Dynamic Code (Build.rs)
 ```bash
-cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git \
-  --relative-path templates/build-rs \
+cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git templates/build-rs \
   --name my-build-service \
   --define proto_name=greet
 ```
 
 ### 2. Generating from the Local Repository
-You can test the templates locally using your local directory path:
+You can test the templates locally by pointing the `--path` flag directly to the target subdirectory:
 
 #### Option A: Checked In Code (Buf Generate)
 ```bash
-cargo generate --path /Users/conradwt/projects.dir/connect-rust-boilerplate \
-  --relative-path templates/buf-generate \
+cargo generate --path /Users/conradwt/projects.dir/connect-rust-boilerplate/templates/buf-generate \
   --name my-local-buf-service \
   --define proto_name=greet
 ```
 
 #### Option B: Dynamic Code (Build.rs)
 ```bash
-cargo generate --path /Users/conradwt/projects.dir/connect-rust-boilerplate \
-  --relative-path templates/build-rs \
+cargo generate --path /Users/conradwt/projects.dir/connect-rust-boilerplate/templates/build-rs \
   --name my-local-build-service \
   --define proto_name=greet
 ```
