@@ -21,14 +21,14 @@ Once you push this boilerplate repository to your remote Git account, you can ge
 
 #### Option A: Checked In Code (Buf Generate)
 ```bash
-cargo generate --git https://github.com/conradwt/connect-rust-boilerplate.git templates/buf-generate \
+cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git templates/buf-generate \
   --name my-buf-service \
   --define proto_name=greet
 ```
 
 #### Option B: Dynamic Code (Build.rs)
 ```bash
-cargo generate --git https://github.com/conradwt/connect-rust-boilerplate.git templates/build-rs \
+cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git templates/build-rs \
   --name my-build-service \
   --define proto_name=greet
 ```
