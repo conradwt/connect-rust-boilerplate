@@ -2,7 +2,7 @@
 name = "{{project-name}}"
 version = "0.1.0"
 edition = "2024"
-authors = ["Conrad Taylor <conradwt@gmail.com>"]
+authors = ["Name <email@domain.com>"]
 license = "MIT"
 
 [[bin]]
