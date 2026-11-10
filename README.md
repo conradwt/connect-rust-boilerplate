@@ -17,18 +17,18 @@ cargo install cargo-generate
 ```
 
 ### 1. Generating from the Remote Git Repository
-Once you push this boilerplate repository to your remote Git account, you can generate projects from it by passing the relative template path as a positional argument:
+Once you fork this repository to your remote Git account, you can generate projects from it by passing the relative template path as a positional argument:
 
 #### Option A: Checked In Code (Buf Generate)
 ```bash
-cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git templates/buf-generate \
+cargo generate --git https://github.com/conradwt/connect-rust-boilerplate.git templates/buf-generate \
   --name my-buf-service \
   --define proto_name=greet
 ```
 
 #### Option B: Dynamic Code (Build.rs)
 ```bash
-cargo generate --git https://github.com/your-username/connect-rust-boilerplate.git templates/build-rs \
+cargo generate --git https://github.com/conradwt/connect-rust-boilerplate.git templates/build-rs \
   --name my-build-service \
   --define proto_name=greet
 ```
